@@ -7,6 +7,7 @@ const inputNode = document.querySelector('input[type="number"]');
 // console.log(inputNode.value);
 const createBtnNode = document.querySelector('button[data-action="render"]');
 createBtnNode.addEventListener('click', e => {
+    console.log(e.target);
     createBoxes(+inputNode.value);
 });
 
